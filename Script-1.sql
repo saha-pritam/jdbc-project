@@ -1,0 +1,102 @@
+drop table if exists Customers;
+create table Customers
+(
+CustomerID integer primary key auto_increment,	
+CustomerName varchar(50),
+ContactName	varchar(50),
+Address varchar(50),
+City varchar(50),
+PostalCode varchar(50),	
+Country varchar(50)
+);
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Alfreds Futterkiste','Maria Anders','Obere Str. 57','Berlin','12209','Germany');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Ana Trujillo Emparedados y helados','Ana Trujillo','Avda. de la Constitución 2222','México D.F.','05021','Mexico');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Antonio Moreno Taquería','Antonio Moreno','Mataderos 2312','México D.F.','05023','Mexico');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Around the Horn','Thomas Hardy','120 Hanover Sq.','London','WA1 1DP','UK');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Berglunds snabbköp','Christina Berglund','Berguvsvägen 8','Luleå','S-958 22','Sweden');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Blauer See Delikatessen','Hanna Moos','Forsterstr. 57','Mannheim','68306','Germany');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Blondel père et fils','Frédérique Citeaux','24, place Kléber','Strasbourg','67000','France');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Bólido Comidas preparadas','Martín Sommer','C/ Araquil, 67','Madrid','28023','Spain');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Bon app\'','Laurence Lebihans','12, rue des Bouchers','Marseille','13008','France');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Bottom-Dollar Marketse','Elizabeth Lincoln','23 Tsawassen Blvd.','Tsawassen','T2F 8M4','Canada');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('B\'s Beverages','Victoria Ashworth','Fauntleroy Circus','London','EC2 5NT','UK');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Cactus Comidas para llevar','Patricio Simpson','Cerrito 333','Buenos Aires','1010','Argentina');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Centro comercial Moctezuma','Francisco Chang','Sierras de Granada 9993','México D.F.','05022','Mexico');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Chop-suey Chinese','Yang Wang','Hauptstr. 29','Bern','3012','Switzerland');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Comércio Mineiro','Pedro Afonso','Av. dos Lusíadas, 23','São Paulo','05432-043','Brazil');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Consolidated Holdings','Elizabeth Brown','Berkeley Gardens 12 Brewery ','London','WX1 6LT','UK');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Drachenblut Delikatessend','Sven Ottlieb','Walserweg 21','Aachen','52066','Germany');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Du monde entier','Janine Labrune','67, rue des Cinquante Otages','Nantes','44000','France');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Eastern Connection','Ann Devon','35 King George','London','WX3 6FW','UK');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Ernst Handel','Roland Mendel','Kirchgasse 6','Graz','8010','Austria');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Familia Arquibaldo','Aria Cruz','Rua Orós, 92','São Paulo','05442-030','Brazil');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('FISSA Fabrica Inter. Salchichas S.A.','Diego Roel','C/ Moralzarzal, 86','Madrid','28034','Spain');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Folies gourmandes','Martine Rancé','184, chaussée de Tournai','Lille','59000','France');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Folk och fä HB','Maria Larsson','Åkergatan 24','Bräcke','S-844 67','Sweden');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Frankenversand','Peter Franken','Berliner Platz 43','München','80805','Germany');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('France restauration','Carine Schmitt','54, rue Royale','Nantes','44000','France');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Franchi S.p.A.','Paolo Accorti','Via Monte Bianco 34','Torino','10100','Italy');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Furia Bacalhau e Frutos do Mar','Lino Rodriguez ','Jardim das rosas n. 32','Lisboa','1675','Portugal');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Galería del gastrónomo','Eduardo Saavedra','Rambla de Cataluña, 23','Barcelona','08022','Spain');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Godos Cocina Típica','José Pedro Freyre','C/ Romero, 33','Sevilla','41101','Spain');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Gourmet Lanchonetes','André Fonseca','Av. Brasil, 442','Campinas','04876-786','Brazil');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Great Lakes Food Market','Howard Snyder','2732 Baker Blvd.','Eugene','97403','USA');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('GROSELLA-Restaurante','Manuel Pereira','5ª Ave. Los Palos Grandes','Caracas','1081','Venezuela');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Hanari Carnes','Mario Pontes','Rua do Paço, 67','Rio de Janeiro','05454-876','Brazil');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('HILARIÓN-Abastos','Carlos Hernández','Carrera 22 con Ave. Carlos Soublette #8-35','San Cristóbal','5022','Venezuela');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Hungry Coyote Import Store','Yoshi Latimer','City Center Plaza 516 Main St.','Elgin','97827','USA');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Hungry Owl All-Night Grocers','Patricia McKenna','8 Johnstown Road','Cork','','Ireland');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Island Trading','Helen Bennett','Garden House Crowther Way','Cowes','PO31 7PJ','UK');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Königlich Essen','Philip Cramer','Maubelstr. 90','Brandenburg','14776','Germany');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('La corne d\'abondance','Daniel Tonini','67, avenue de l\'Europe','Versailles','78000','France');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('La maison d\'Asie','Annette Roulet','1 rue Alsace-Lorraine','Toulouse','31000','France');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Laughing Bacchus Wine Cellars','Yoshi Tannamuri','1900 Oak St.','Vancouver','V3F 2K1','Canada');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Lazy K Kountry Store','John Steel','12 Orchestra Terrace','Walla Walla','99362','USA');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Lehmanns Marktstand','Renate Messner','Magazinweg 7','Frankfurt a.M. ','60528','Germany');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Let\'s Stop N Shop','Jaime Yorres','87 Polk St. Suite 5','San Francisco','94117','USA');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('LILA-Supermercado','Carlos González','Carrera 52 con Ave. Bolívar #65-98 Llano Largo','Barquisimeto','3508','Venezuela');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('LINO-Delicateses','Felipe Izquierdo','Ave. 5 de Mayo Porlamar','I. de Margarita','4980','Venezuela');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Lonesome Pine Restaurant','Fran Wilson','89 Chiaroscuro Rd.','Portland','97219','USA');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Magazzini Alimentari Riuniti','Giovanni Rovelli','Via Ludovico il Moro 22','Bergamo','24100','Italy');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Maison Dewey','Catherine Dewey','Rue Joseph-Bens 532','Bruxelles','B-1180','Belgium');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Mère Paillarde','Jean Fresnière','43 rue St. Laurent','Montréal','H1J 1C3','Canada');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Morgenstern Gesundkost','Alexander Feuer','Heerstr. 22','Leipzig','04179','Germany');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('North/South','Simon Crowther','South House 300 Queensbridge','London','SW7 1RZ','UK');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Océano Atlántico Ltda.','Yvonne Moncada','Ing. Gustavo Moncada 8585 Piso 20-A','Buenos Aires','1010','Argentina');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Old World Delicatessen','Rene Phillips','2743 Bering St.','Anchorage','99508','USA');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Ottilies Käseladen','Henriette Pfalzheim','Mehrheimerstr. 369','Köln','50739','Germany');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Paris spécialités','Marie Bertrand','265, boulevard Charonne','Paris','75012','France');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Pericles Comidas clásicas','Guillermo Fernández','Calle Dr. Jorge Cash 321','México D.F.','05033','Mexico');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Piccolo und mehr','Georg Pipps','Geislweg 14','Salzburg','5020','Austria');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Princesa Isabel Vinhoss','Isabel de Castro','Estrada da saúde n. 58','Lisboa','1756','Portugal');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Que Delícia','Bernardo Batista','Rua da Panificadora, 12','Rio de Janeiro','02389-673','Brazil');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Queen Cozinha','Lúcia Carvalho','Alameda dos Canàrios, 891','São Paulo','05487-020','Brazil');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('QUICK-Stop','Horst Kloss','Taucherstraße 10','Cunewalde','01307','Germany');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Rancho grande','Sergio Gutiérrez','Av. del Libertador 900','Buenos Aires','1010','Argentina');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Rattlesnake Canyon Grocery','Paula Wilson','2817 Milton Dr.','Albuquerque','87110','USA');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Reggiani Caseifici','Maurizio Moroni','Strada Provinciale 124','Reggio Emilia','42100','Italy');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Ricardo Adocicados','Janete Limeira','Av. Copacabana, 267','Rio de Janeiro','02389-890','Brazil');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Richter Supermarkt','Michael Holz','Grenzacherweg 237','Genève','1203','Switzerland');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Romero y tomillo','Alejandra Camino','Gran Vía, 1','Madrid','28001','Spain');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Santé Gourmet','Jonas Bergulfsen','Erling Skakkes gate 78','Stavern','4110','Norway');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Save-a-lot Markets','Jose Pavarotti','187 Suffolk Ln.','Boise','83720','USA');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Seven Seas Imports','Hari Kumar','90 Wadhurst Rd.','London','OX15 4NB','UK');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Simons bistro','Jytte Petersen','Vinbæltet 34','København','1734','Denmark');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Spécialités du monde','Dominique Perrier','25, rue Lauriston','Paris','75016','France');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Split Rail Beer & Ale','Art Braunschweiger','P.O. Box 555','Lander','82520','USA');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Suprêmes délices','Pascale Cartrain','Boulevard Tirou, 255','Charleroi','B-6000','Belgium');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('The Big Cheese','Liz Nixon','89 Jefferson Way Suite 2','Portland','97201','USA');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('The Cracker Box','Liu Wong','55 Grizzly Peak Rd.','Butte','59801','USA');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Toms Spezialitäten','Karin Josephs','Luisenstr. 48','Münster','44087','Germany');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Tortuga Restaurante','Miguel Angel Paolino','Avda. Azteca 123','México D.F.','05033','Mexico');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Tradição Hipermercados','Anabela Domingues','Av. Inês de Castro, 414','São Paulo','05634-030','Brazil');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Trail\'s Head Gourmet Provisioners','Helvetius Nagy','722 DaVinci Blvd.','Kirkland','98034','USA');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Vaffeljernet','Palle Ibsen','Smagsløget 45','Århus','8200','Denmark');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Victuailles en stock','Mary Saveley','2, rue du Commerce','Lyon','69004','France');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Vins et alcools Chevalier','Paul Henriot','59 rue de l\'Abbaye','Reims','51100','France');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Die Wandernde Kuh','Rita Müller','Adenauerallee 900','Stuttgart','70563','Germany');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Wartian Herkku','Pirkko Koskitalo','Torikatu 38','Oulu','90110','Finland');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Wellington Importadora','Paula Parente','Rua do Mercado, 12','Resende','08737-363','Brazil');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('White Clover Markets','Karl Jablonski','305 - 14th Ave. S. Suite 3B','Seattle','98128','USA');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Wilman Kala','Matti Karttunen','Keskuskatu 45','Helsinki','21240','Finland');
+insert into customers(CustomerName,ContactName,Address,City,PostalCode,Country) values('Wolski','Zbyszek','ul. Filtrowa 68','Walla','01-012','Poland');
