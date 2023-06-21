@@ -2,6 +2,7 @@ package org.pritam.jdbc_project.model;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 public class Customers {
 	private int customerId;
@@ -23,24 +24,13 @@ public class Customers {
 		this.postalCode = postalCode;
 		this.country = country;
 	}
-	
-	public static Customers resultSetToCustomer(ResultSet resultSet) {
-		Customers customer=null;
-		try {
-			customer = new Customers(resultSet.getInt("CustomerID"),
-					resultSet.getString("CustomerName"),
-					resultSet.getString("ContactName"),
-					resultSet.getString("Address"),
-					resultSet.getString("City"),
-					resultSet.getString("PostalCode"),
-					resultSet.getString("Country"));
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+	public static void printCustomers(List<Customers> customers) {
+		System.out.printf("%-15s%-40s%-40s%-40s%-40s%-40s%-40s\n","Customer ID","Customer Name","Contact Name","Address","City","Postal Code","Country");
+		System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------");
+		for(Customers customer:customers) {
+			System.out.printf("%-15s%-40s%-40s%-40s%-40s%-40s%-40s\n",customer.getCustomerId(),customer.getCustomerName(),customer.getContactName(),customer.getAddress(),customer.getCity(),customer.getPostalCode(),customer.getCountry());
 		}
-		return customer;
 	}
-	
 	public int getCustomerId() {
 		return customerId;
 	}
@@ -83,11 +73,4 @@ public class Customers {
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	@Override
-	public String toString() {
-		return "Customers [customerId=" + customerId + ", customerName=" + customerName + ", contactName=" + contactName
-				+ ", address=" + address + ", city=" + city + ", postalCode=" + postalCode + ", country=" + country
-				+ "]";
-	}
-	
 }
