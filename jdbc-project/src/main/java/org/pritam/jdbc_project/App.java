@@ -2,19 +2,14 @@ package org.pritam.jdbc_project;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.Scanner;
 
-import org.pritam.jdbc_project.ConnectionProvider.ConnectionProvider;
 import org.pritam.jdbc_project.DAO.CustomersDAO;
 import org.pritam.jdbc_project.model.City;
 import org.pritam.jdbc_project.model.Country;
 import org.pritam.jdbc_project.model.Customers;
 
 public class App {
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args){
 		CustomersDAO customersDAO = new CustomersDAO();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		while (true) {
@@ -25,10 +20,13 @@ public class App {
 							+ "\n5.Insert Customer"
 							+ "\n6.Update Customer"
 							+ "\n7.Delete Customer"
-							+ "\n9.Exit");
-			System.out.print("Enter Your Choice :- ");
-			int n = Integer.parseInt(br.readLine());
+							+ "\n8.Display Summary By City"
+							+ "\n9.Display Summary By Country"
+							+ "\n10.Exit");
 			try {
+				System.out.print("Enter Your Choice :- ");
+				int n = Integer.parseInt(br.readLine());
+				
 				if (n == 1)
 					Customers.printCustomers(customersDAO.getCustomersBy(null, null));
 				else if (n == 2) {
@@ -82,7 +80,11 @@ public class App {
 					int customerID=Integer.parseInt(br.readLine());
 					customersDAO.deleteCustomer(customerID);
 				}
-				else if (n == 9) {
+				else if(n==8)
+					City.printCitySummary(customersDAO.getSummaryByCity());
+				else if(n==9)
+					Country.printCountrySummary(customersDAO.getSummaryByCountry());
+				else if (n == 10) {
 					customersDAO.closeConnection();
 					break;
 				}
