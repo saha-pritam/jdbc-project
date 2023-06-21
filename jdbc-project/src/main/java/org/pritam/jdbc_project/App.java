@@ -13,10 +13,6 @@ import org.pritam.jdbc_project.model.City;
 import org.pritam.jdbc_project.model.Country;
 import org.pritam.jdbc_project.model.Customers;
 
-/**
- * Hello world!
- *
- */
 public class App {
 	public static void main(String[] args) throws Exception {
 		CustomersDAO customersDAO = new CustomersDAO();
@@ -28,6 +24,7 @@ public class App {
 							+ "\n4.Display Customer By Country" 
 							+ "\n5.Insert Customer"
 							+ "\n6.Update Customer"
+							+ "\n7.Delete Customer"
 							+ "\n9.Exit");
 			System.out.print("Enter Your Choice :- ");
 			int n = Integer.parseInt(br.readLine());
@@ -79,6 +76,11 @@ public class App {
 						customersDAO.insertCustomer(customer);
 					else
 						customersDAO.updateCustomer(customer);	
+				}
+				else if(n==7) {
+					System.out.print("Enter the ID of the customer whose data you want to delete :- ");
+					int customerID=Integer.parseInt(br.readLine());
+					customersDAO.deleteCustomer(customerID);
 				}
 				else if (n == 9) {
 					customersDAO.closeConnection();
